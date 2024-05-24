@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TodoList</title>
+<style>
+  html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #FFB1B1 50%, #E49BFF 50%);
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+  }
+
+  h1 {
+    color: RED; /* Heading color */
+    padding: 10px;
+  }
+
+  .box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  #heading {
+    background-color: #ACE2E1; /* Heading background color */
+    text-align: center;
+  }
+
+  .item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+  .item:last-child {
+    border-bottom: 0;
+  }
+
+  input:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3; /* Checked item text color */
+  }
+
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a; /* Item text color */
+  }
+
+  form {
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  button {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #A683E3; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+  }
+
+  input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #A683E3; /* Text input focus color */
+  }
+
+  ::placeholder {
+    color: grey; /* Placeholder text color */
+    opacity: 1;
+  }
+
+  footer {
+    color: #6C0345; /* Footer text color */
+    color: rgba(0, 0, 0, 0.5); /* Footer text color */
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <h1>FSD</h1>
+  <div class="box">
+    <div id="heading">
+      <h2>MAY  24TH  2024</h2>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Finish Coding Project</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Submit reports by saturday</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>write Blog Post</p>
+    </div>
+  </div>
+  <form>
+    <input type="text" placeholder="Enter something...">
+    <button>+</button>
+  </form>
+  <footer>Thankyou</footer>
+</body>
+</html>
